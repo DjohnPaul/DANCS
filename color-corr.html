@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS — Color-Histogram Analysis!</title>
+    
+    <!-- Logo Title -->
+    <link rel="icon" href="images/cis_logo_t.png" type="image/x-icon/">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/color-hist.css">
+    <link rel="stylesheet" href="styles/figure-container.css">
+    <link rel="stylesheet" href="styles/crustacean-species.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <img class="logo-img" src="images/cis_logo_name.png">
+        </div>
+        <div>
+            <a href="landing-page.html">
+                <button class="right-btn">Home</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Homepage -->
+    <div class="homepage">
+        <img class="homepage-img" src="images/background_img3.jpg">
+        <div class="bottom-right">
+            <strong class="bottom-right-str">Color-Histograms Analysis</strong><br>
+            <span class="bottom-right-spn">Extract the intensity distribution of colors in an image through color <br>
+                histograms. We compute histograms for the Red, Green, and Blue (RGB) channels.</span>
+        </div>
+    </div>
+
+    <!-- Color Histogram Figures -->
+    <div class="figure-title">Species-Based Color Histogram Comparison</div>
+
+    <hr class="hr-tlt">
+    
+    <!-- Dungeness Crab -->
+    <div class="figure-cntr">
+        <div class="name">Dungeness Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/color_corr/dungeness_crab/plot_dungeness_crab_vs_fiddler_crab.png" alt="Crab 1" 
+                onclick="openPopup('line', 'figures/color_corr/dungeness_crab/plot_dungeness_crab_vs_fiddler_crab.png', 'The color distributions between the Dungeness and Fiddler crabs differ significantly as the Fiddler Crab’s exhibits more extreme peaks and dips like at Bin_3, Bin_11 and Bin_18 for example, suggesting a higher contrast in the Fiddler Crab’s Coloration.')">
+                
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/dungeness_crab/plot_dungeness_crab_vs_hermit_crab.png" alt="Crab 2" 
+                onclick="openPopup('line', 'figures/color_corr/dungeness_crab/plot_dungeness_crab_vs_hermit_crab.png', 'The color distributions between the Dungeness Crab and Hermit crabs are significant with the biggest difference occurring in the darkest bins, Bin_0 & Bin_1.')">
+                
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/dungeness_crab/plot_dungeness_crab_vs_king_crab.png" alt="Crab 3" 
+                onclick="openPopup('line', 'figures/color_corr/dungeness_crab/plot_dungeness_crab_vs_king_crab.png', 'The color distribution of the Dungeness Crab and King Crab differ quite a lot, with the King Crab dominating in Bin_0-Bin_2 and showing a broader spread across midtones, while the Dungeness Crab exhibits a sharp peak in Bin_20.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/dungeness_crab/plot_dungeness_crab_vs_rock_crab.png" alt="Crab 4" 
+                onclick="openPopup('line', 'figures/color_corr/dungeness_crab/plot_dungeness_crab_vs_rock_crab.png', 'The color difference between the Dungeness Crab and Rock Crab differ a bit, with the Rock Crab having a lower Bin_0-Bin_1 but a higher Bin_2-3. The Rock Crab also exhibits high spikes in Bin_10 and Bin_16-19.')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Fiddler Crab -->
+    <div class="figure-cntr">
+        <div class="name">Fiddler Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/color_corr/fiddler_crab/plot_fiddler_crab_vs_dungeness_crab.png" alt="Crab 1" 
+                onclick="openPopup('line', 'figures/color_corr/fiddler_crab/plot_fiddler_crab_vs_dungeness_crab.png', 'The color distributions between the Dungeness and Fiddler crabs are similar but not identical as the Fiddler Crab’s exhibits more extreme peaks and dips like at Bin_3, Bin_11 and Bin_18 for example, suggesting a higher contrast in the Fiddler Crab’s Coloration.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/fiddler_crab/plot_fiddler_crab_vs_hermit_crab.png" alt="Crab 2" 
+                onclick="openPopup('line', 'figures/color_corr/fiddler_crab/plot_fiddler_crab_vs_hermit_crab.png', 'The Fiddler Crab shows a lower value in Bin_0 but has higher spikes from Bin_1 and Bin_2 when compared to the Hermit Crab. The Fiddler Crab and Hermit Crab both have spikes in Bin_11 and Bin_20 although the Fiddler Crab’s spikes are significantly higher.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/fiddler_crab/plot_fiddler_crab_vs_king_crab.png" alt="Crab 3" 
+                onclick="openPopup('line', 'figures/color_corr/fiddler_crab/plot_fiddler_crab_vs_king_crab.png', 'The Fiddler Crab and King Crab’s color distributions are largely different from one another with the Fiddler Crab dominating in Bin_0 to Bin_5 while the King Crab shows a more balanced distribution across Bin_6 to Bin_15.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/fiddler_crab/plot_fiddler_crab_vs_rock_crab.png" alt="Crab 4" 
+                onclick="openPopup('line', 'figures/color_corr/fiddler_crab/plot_fiddler_crab_vs_rock_crab.png', 'The Fiddler Crab and Rock Crab both have similar patterns and spikes in their color distributions with the Rock Crab having lower spikes in contrast to the Fiddler Crab.')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Hermit Crab -->
+    <div class="figure-cntr">
+        <div class="name">Hermit Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/color_corr/hermit_crab/plot_hermit_crab_vs_dungeness_crab.png" alt="Crab 1" 
+                onclick="openPopup('line', 'figures/color_corr/hermit_crab/plot_hermit_crab_vs_dungeness_crab.png', 'The color distributions between the Dungeness Crab and Hermit crabs are very similar with the biggest difference occurring in the darkest bins (Bin_0 & Bin_1) suggesting that the two species may have a similar coloration with one another.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/hermit_crab/plot_hermit_crab_vs_fiddler_crab.png" alt="Crab 2" 
+                onclick="openPopup('line', 'figures/color_corr/hermit_crab/plot_hermit_crab_vs_fiddler_crab.png', 'The Fiddler Crab shows a lower value in Bin_0 but has higher spikes from Bin_1 and Bin_2 when compared to the Hermit Crab. The Fiddler Crab and Hermit Crab both have spikes in Bin_11 and Bin_20 although the Fiddler Crab’s spikes are significantly higher.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/hermit_crab/plot_hermit_crab_vs_king_crab.png" alt="Crab 3" 
+                onclick="openPopup('line', 'figures/color_corr/hermit_crab/plot_hermit_crab_vs_king_crab.png', 'The color distributions between the Hermit Crab and King crab are very distinct, with the Hermit Crab showing a stronger spike from Bin_6 to Bin_10.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/hermit_crab/plot_hermit_crab_vs_rock_crab.png" alt="Crab 4" 
+                onclick="openPopup('line', 'figures/color_corr/hermit_crab/plot_hermit_crab_vs_rock_crab.png', 'The Hermit Crab and Rock Crab both have similar patterns in spikes with the Rock Crab having a higher spike in Bin_10 while the Rock Crab has a higher spike in Bin_20.')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- King Crab -->
+    <div class="figure-cntr">
+        <div class="name">King Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/color_corr/king_crab/plot_king_crab_vs_dungeness_crab.png" alt="Crab 1" 
+                onclick="openPopup('line', 'figures/color_corr/king_crab/plot_king_crab_vs_dungeness_crab.png', 'The color distribution of the Dungeness Crab and King Crab differ quite a lot, with the King Crab dominating in darker tones (Bin_0-Bin_2) and showing a broader spread across midtones, while the Dungeness Crab exhibits a sharp peak in Bin_20.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/king_crab/plot_king_crab_vs_fiddler_crab.png" alt="Crab 2" 
+                onclick="openPopup('line', 'figures/color_corr/king_crab/plot_king_crab_vs_fiddler_crab.png', 'The Fiddler Crab and King Crab’s color distributions are largely different from one another with the Fiddler Crab dominating in Bin_0 to Bin_5 while the King Crab shows a more balanced distribution across Bin_6 to Bin_15.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/king_crab/plot_king_crab_vs_hermit_crab.png" alt="Crab 3" 
+                onclick="openPopup('line', 'figures/color_corr/king_crab/plot_king_crab_vs_hermit_crab.png', 'The color distributions between the Hermit Crab and King crab are very distinct, with the Hermit Crab showing a stronger spike from Bin_6 to Bin_10.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/king_crab/plot_king_crab_vs_rock_crab.png" alt="Crab 4" 
+                onclick="openPopup('line', 'figures/color_corr/king_crab/plot_king_crab_vs_rock_crab.png', 'The distribution between the King Crab and the Rock Crab have very similar patterns but the King Crab has a low drop in Bin_17 in contrast to the Rock Crab’s high spike from Bin_17 up to Bin_19.')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Rock Crab -->
+    <div class="figure-cntr">
+        <div class="name">Rock Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/color_corr/rock_crab/plot_rock_crab_vs_dungeness_crab.png" alt="Crab 1" 
+                onclick="openPopup('line', 'figures/color_corr/rock_crab/plot_rock_crab_vs_dungeness_crab.png', 'The color difference between the Dungeness Crab and Rock Crab differ a bit, with the Rock Crab having a lower Bin_0-Bin_1 but a higher Bin_2-3. The Rock Crab also exhibits high spikes in Bin_10 and Bin_16-19.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/rock_crab/plot_rock_crab_vs_fiddler_crab.png" alt="Crab 2" 
+                onclick="openPopup('line', 'figures/color_corr/rock_crab/plot_rock_crab_vs_fiddler_crab.png', 'The Fiddler Crab and Rock Crab both have similar patterns and spikes in their color distributions with the Rock Crab having lower spikes in contrast to the Fiddler Crab.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/rock_crab/plot_rock_crab_vs_hermit_crab.png" alt="Crab 3" 
+                onclick="openPopup('line', 'figures/color_corr/rock_crab/plot_rock_crab_vs_hermit_crab.png', 'The Hermit Crab and Rock Crab both have similar patterns in spikes with the Rock Crab having a higher spike in Bin_10 while the Rock Crab has a higher spike in Bin_20.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/color_corr/rock_crab/plot_rock_crab_vs_king_crab.png" alt="Crab 4" 
+                onclick="openPopup('line', 'figures/color_corr/rock_crab/plot_rock_crab_vs_king_crab.png', 'The distribution between the King Crab and the Rock Crab have very similar patterns but the King Crab has a low drop in Bin_17 in contrast to the Rock Crab’s high spike from Bin_17 up to Bin_19.')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Color Histogram Heatmap -->
+    <div class="figure-title">Color Histogram Heatmap</div>
+
+    <div class="clr-hist-cntr">
+        <div class="clr-hist-grid">
+            <div class="clr-hist-item">
+                <img class="clr-hist-img" src="figures/color_corr/plot_color_hist_heatmap.png" alt="Color-Histogram Correlation Between Crab Species" 
+                onclick="openPopup('clr-hist', 'figures/color_corr/plot_color_hist_heatmap.png', 'The Color-Histogram Correlation Between Crab Species Heatmap illustrates the correlation between different species based on their color distributions. In the heatmap, a correlation value of 1 indicates a perfect positive correlation, while -1 signifies a perfect negative correlation. Warmer colors represent values closer to 1, whereas cooler colors correspond to values closer to -1.')">
+                <div class="clr-hist-title">Color-Histogram Correlation Between Crab Species</div>
+            </div>
+            <div class="clr-hist-item">
+                <img class="clr-hist-img" src="figures/color_corr/plot_color_hist_heatmap_species-based.png" alt="Species-Based Color Histogram Correlation" 
+                onclick="openPopup('clr-hist', 'figures/color_corr/plot_color_hist_heatmap_species-based.png', 'The Species-Based Color Histogram Correlation Heatmap shows that the king crab and Dungeness crab have the highest correlation, while the king crab and fiddler crab have the lowest correlation.')">
+                <div class="clr-hist-title">Species-Based Color Histogram Correlation</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-line" id="popup-line">
+        <div class="popup-content-line">
+            <span class="close-btn" onclick="closePopup('line')">&times;</span>
+            <img id="popup-img-line" src="" alt="Popup Image">
+            <p id="popup-desc-line"></p>
+        </div>
+    </div>
+
+    <div class="popup-clr-hist" id="popup-clr-hist">
+        <div class="popup-content-clr-hist">
+            <span class="close-btn" onclick="closePopup('clr-hist')">&times;</span>
+            <img id="popup-img-clr-hist" src="" alt="Popup Image">
+            <p id="popup-desc-clr-hist"></p>
+        </div>
+    </div>
+
+    <!-- Crustacean Species -->
+    <div id="crustacean-container"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <img class="footer-logo-img" src="images/cis_logo_name_footer.png">
+        </div>
+    </div>
+
+    <!-- JS Links -->
+    <script src="scripts/pop-out-image.js"></script>
+    <script src="scripts/crustacean-species.js"></script>
+</body>
+</html>

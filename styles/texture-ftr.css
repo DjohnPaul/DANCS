@@ -1,0 +1,98 @@
+/* CSS: figure-container.css */
+
+/* Shape-Feature Heatmap CSS */
+.txtr-ftr-cntr{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.txtr-ftr-item{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 780px;
+    height: 480px;
+}
+
+.txtr-ftr-img{
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.txtr-ftr-img:hover {
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.txtr-ftr-title{
+    font-size: 20px;
+    color: darkred;
+    padding: 20px;   
+}
+
+.cntr-space{
+    margin-bottom: 50px;
+}
+
+/* Popup Overlay */
+.popup-txtr-ftr{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.popup-txtr-ftr.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup-content-txtr-ftr{
+    margin-top: -50px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 1000px;
+    height: 550px;
+}
+
+.popup-content-txtr-ftr img{
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.popup-content-txtr-ftr p{
+    margin-top: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}

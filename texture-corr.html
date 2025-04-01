@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS — Texture-Feature Analysis!</title>
+    
+    <!-- Logo Title -->
+    <link rel="icon" href="images/cis_logo_t.png" type="image/x-icon/">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/texture-ftr.css">
+    <link rel="stylesheet" href="styles/figure-container.css">
+    <link rel="stylesheet" href="styles/crustacean-species.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <img class="logo-img" src="images/cis_logo_name.png">
+        </div>
+        <div>
+            <a href="landing-page.html">
+                <button class="right-btn">Home</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Homepage -->
+    <div class="homepage">
+        <img class="top-homepage-img" src="images/background_img4.jpg">
+        <div class="bottom-right">
+            <strong class="bottom-right-str">Texture-Feature Analysis</strong><br>
+            <span class="bottom-right-spn">Identify and analyze which crab species have similar textural properties with <br>
+                Local Binary Pattern (LBP), a type of visual descriptor such as texture and <br>
+                object's surface used for classification in computer vision.</span>
+        </div>
+    </div>
+
+    <!-- Texture Feature Figures -->
+    <div class="figure-title">Species-Based Texture-Feature Comparison</div>
+
+    <hr class="hr-tlt">
+
+    <!-- Dungeness Crab -->
+    <div class="figure-cntr">
+        <div class="name">Dungeness Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/texture_corr/dungeness_crab/plot_dungeness_crab_vs_fiddler_crab.png" alt="Crab 1" 
+                onclick="openPopup('bar', 'figures/texture_corr/dungeness_crab/plot_dungeness_crab_vs_fiddler_crab.png', 'After comparing the LBP of the Dungeness Crab with the Fiddler Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/dungeness_crab/plot_dungeness_crab_vs_hermit_crab.png" alt="Crab 2" 
+                onclick="openPopup('bar', 'figures/texture_corr/dungeness_crab/plot_dungeness_crab_vs_hermit_crab.png', 'After comparing the LBP of the Dungeness Crab with the Hermit Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/dungeness_crab/plot_dungeness_crab_vs_king_crab.png" alt="Crab 3" 
+                onclick="openPopup('bar', 'figures/texture_corr/dungeness_crab/plot_dungeness_crab_vs_king_crab.png', 'After comparing the LBP of the Dungeness Crab with the King Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/dungeness_crab/plot_dungeness_crab_vs_rock_crab.png" alt="Crab 4" 
+                onclick="openPopup('bar', 'figures/texture_corr/dungeness_crab/plot_dungeness_crab_vs_rock_crab.png', 'After comparing the LBP of the Dungeness Crab with the Rock Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Fiddler Crab -->
+    <div class="figure-cntr">
+        <div class="name">Fiddler Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/texture_corr/fiddler_crab/plot_fiddler_crab_vs_dungeness_crab.png" alt="Crab 1" 
+                onclick="openPopup('bar', 'figures/texture_corr/fiddler_crab/plot_fiddler_crab_vs_dungeness_crab.png', 'After comparing the LBP of the Fiddler Crab with the Dungeness Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/fiddler_crab/plot_fiddler_crab_vs_hermit_crab.png" alt="Crab 2" 
+                onclick="openPopup('bar', 'figures/texture_corr/fiddler_crab/plot_fiddler_crab_vs_hermit_crab.png', 'After comparing the LBP of the Fiddler Crab with the Hermit Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/fiddler_crab/plot_fiddler_crab_vs_king_crab.png" alt="Crab 3" 
+                onclick="openPopup('bar', 'figures/texture_corr/fiddler_crab/plot_fiddler_crab_vs_king_crab.png', 'After comparing the LBP of the Fiddler Crab with the King Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/fiddler_crab/plot_fiddler_crab_vs_rock_crab.png" alt="Crab 4" 
+                onclick="openPopup('bar', 'figures/texture_corr/fiddler_crab/plot_fiddler_crab_vs_rock_crab.png', 'After comparing the LBP of the Fiddler Crab with the Rock Crab Dungeness, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Hermit Crab -->
+    <div class="figure-cntr">
+        <div class="name">Hermit Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/texture_corr/hermit_crab/plot_hermit_crab_vs_dungeness_crab.png" alt="Crab 1" 
+                onclick="openPopup('bar', 'figures/texture_corr/hermit_crab/plot_hermit_crab_vs_dungeness_crab.png', 'After comparing the LBP of the Dungeness Crab with the Fiddler Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/hermit_crab/plot_hermit_crab_vs_fiddler_crab.png" alt="Crab 2" 
+                onclick="openPopup('bar', 'figures/texture_corr/hermit_crab/plot_hermit_crab_vs_fiddler_crab.png', 'After comparing the LBP of the Fiddler Crab with the Hermit Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/hermit_crab/plot_hermit_crab_vs_king_crab.png" alt="Crab 3" 
+                onclick="openPopup('bar', 'figures/texture_corr/hermit_crab/plot_hermit_crab_vs_king_crab.png', 'After comparing the LBP of the Hermit Crab with the King Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/hermit_crab/plot_hermit_crab_vs_rock_crab.png" alt="Crab 4" 
+                onclick="openPopup('bar', 'figures/texture_corr/hermit_crab/plot_hermit_crab_vs_rock_crab.png', 'After comparing the LBP of the Hermit Crab with the Rock Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- King Crab -->
+    <div class="figure-cntr">
+        <div class="name">King Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/texture_corr/king_crab/plot_king_crab_vs_dungeness_crab.png" alt="Crab 1" 
+                onclick="openPopup('bar', 'figures/texture_corr/king_crab/plot_king_crab_vs_dungeness_crab.png', 'After comparing the LBP of the Dungeness Crab with the Fiddler Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/king_crab/plot_king_crab_vs_fiddler_crab.png" alt="Crab 2" 
+                onclick="openPopup('bar', 'figures/texture_corr/king_crab/plot_king_crab_vs_fiddler_crab.png', 'After comparing the LBP of the Fiddler Crab with the King Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/king_crab/plot_king_crab_vs_hermit_crab.png" alt="Crab 3" 
+                onclick="openPopup('bar', 'figures/texture_corr/king_crab/plot_king_crab_vs_hermit_crab.png', 'After comparing the LBP of the Hermit Crab with the King Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/king_crab/plot_king_crab_vs_rock_crab.png" alt="Crab 4" 
+                onclick="openPopup('bar', 'figures/texture_corr/king_crab/plot_king_crab_vs_rock_crab.png', 'After comparing the LBP of the King Crab with the Rock Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Rock Crab -->
+    <div class="figure-cntr">
+        <div class="name">Rock Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/texture_corr/rock_crab/plot_rock_crab_vs_dungeness_crab.png" alt="Crab 1" 
+                onclick="openPopup('bar', 'figures/texture_corr/rock_crab/plot_rock_crab_vs_dungeness_crab.png', 'After comparing the LBP of the Dungeness Crab with the Fiddler Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/rock_crab/plot_rock_crab_vs_fiddler_crab.png" alt="Crab 2" 
+                onclick="openPopup('bar', 'figures/texture_corr/rock_crab/plot_rock_crab_vs_fiddler_crab.png', 'After comparing the LBP of the Dungeness Crab with the Rock Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/rock_crab/plot_rock_crab_vs_hermit_crab.png" alt="Crab 3" 
+                onclick="openPopup('bar', 'figures/texture_corr/rock_crab/plot_rock_crab_vs_hermit_crab.png', 'After comparing the LBP of the Rock Crab with the Hermit Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/texture_corr/rock_crab/plot_rock_crab_vs_king_crab.png" alt="Crab 4" 
+                onclick="openPopup('bar', 'figures/texture_corr/rock_crab/plot_rock_crab_vs_king_crab.png', 'After comparing the LBP of the King Crab with the Rock Crab, it can be seen that at the LBP pattern bin 17.5, there is a high frequency of 0.30')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Shape Feature Heatmap -->
+    <div class="figure-title">Species-Based LBP Histogram</div>
+
+    <div class="txtr-ftr-cntr">
+        <div class="txtr-ftr-item">
+            <img class="txtr-ftr-img" src="figures/texture_corr/plot_LBP_hist.png" alt="LBP-Histogram Between Crab Species" 
+            onclick="openPopup('txtr-ftr', 'figures/texture_corr/plot_LBP_hist.png', 'Here 5 different graphs, one assigned for each crab. Each crab displays their LBP histogram. The Rock Crab and the Hermit Crab are unique wherein the frequency at the center is higher compared to the rest')">
+            <div class="txtr-ftr-title">LBP-Histogram Between Crab Species</div>
+        </div>
+    </div>
+
+    <div class="figure-title">Texture-Feature Heatmap</div>
+
+    <div class="txtr-ftr-cntr">
+        <div class="txtr-ftr-item">
+            <img class="txtr-ftr-img" src="figures/texture_corr/plot_LBP_corr.png" alt="LBP Texture-Feature Correlation" 
+            onclick="openPopup('txtr-ftr', 'figures/texture_corr/plot_LBP_corr.png', 'Here the heatmap of the different texture features of the crabs are displayed. There is a higher heat from the four edges going to the center. ')">
+            <div class="txtr-ftr-title">LBP Texture-Feature Correlation</div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-bar" id="popup-bar">
+        <div class="popup-content-bar">
+            <span class="close-btn" onclick="closePopup('bar')">&times;</span>
+            <img id="popup-img-bar" src="" alt="Popup Image">
+            <p id="popup-desc-bar"></p>
+        </div>
+    </div>
+
+    <div class="popup-txtr-ftr" id="popup-txtr-ftr">
+        <div class="popup-content-txtr-ftr">
+            <span class="close-btn" onclick="closePopup('txtr-ftr')">&times;</span>
+            <img id="popup-img-txtr-ftr" src="" alt="Popup Image">
+            <p id="popup-desc-txtr-ftr"></p>
+        </div>
+    </div>
+
+    <div class="cntr-space"></div>
+
+    <!-- Crustacean Species -->
+    <div id="crustacean-container"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <img class="footer-logo-img" src="images/cis_logo_name_footer.png">
+        </div>
+    </div>
+
+    <!-- JS Links -->
+    <script src="scripts/pop-out-image.js"></script>
+    <script src="scripts/crustacean-species.js"></script> 
+</body>
+</html>

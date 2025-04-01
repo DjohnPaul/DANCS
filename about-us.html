@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS — About Us</title>
+
+    <!-- Fonts-->
+
+    <!-- Logo Title -->
+    <link rel="icon" href="images/cis_logo_t.png" type="image/x-icon/">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/crustacean-species.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <style>
+        .about-us-cntr{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-left: 300px;
+            text-align: left;
+            height: 500px;
+        }
+        .title{
+            color: darkred;
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+        .name{
+            color: rgb(70, 70, 70);
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <img class="logo-img" src="images/cis_logo_name.png">
+        </div>
+        <div>
+            <a href="landing-page.html">
+                <button class="right-btn">Home</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Homepage -->
+    <div class="homepage">
+        <img class="homepage-img" src="images/background_img.jpg">
+    </div>
+
+    <div class="about-us-cntr">
+        <div class="title">About Us</div>
+        <div class="name">Cruz, Kobe Cruz D.</div>
+        <div class="name">De Guzman, Kim Charles M.</div>
+        <div class="name">Lapuz, Alfred Anthony J.</div>
+        <div class="name">Turla, Djohn Paul A.</div>
+    </div>
+
+    <!-- Crustacean Species -->
+    <div id="crustacean-container"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <img class="footer-logo-img" src="images/cis_logo_name_footer.png">
+        </div>
+    </div>
+
+    <!-- JS Links -->
+    <script src="scripts/crustacean-species.js"></script>
+    
+</body>
+</html>

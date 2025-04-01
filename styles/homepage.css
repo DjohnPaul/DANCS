@@ -1,0 +1,35 @@
+.homepage{
+    position: relative;
+    height: 700px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.homepage-img,
+.top-homepage-img{
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+.top-homepage-img{
+    object-position: top;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    color: #f0f0f0;
+    padding: 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.bottom-right-str{
+    font-size: 48px;
+}
+.bottom-right-spn{
+    font-style: italic;
+    font-size: 32px;
+}

@@ -1,0 +1,14 @@
+.footer{
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    height: 145px;
+
+    background-color: darkred;
+}
+
+.footer-logo-img{
+    height: 100px;
+    width: auto;
+    margin: 20px;
+}

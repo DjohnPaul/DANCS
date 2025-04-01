@@ -1,0 +1,140 @@
+hr{
+    width: 80%;
+}
+
+.hr-tlt{
+    width: 40%;
+}
+img{
+    object-fit: cover;
+}
+
+.figure-title{
+    font-size: 50px;
+    color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.name{
+    font-size: 30px;
+    color: darkred;
+}
+
+.figure-cntr{
+    height: 350px;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.figure-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.figure-item img{
+    height: 230px;
+    width: 430px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+
+}
+
+.figure-item img:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+ /* Popup Overlay */
+ .popup-pca,
+ .popup-cm,
+ .popup-line,
+ .popup-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.popup-pca.active,
+.popup-cm.active,
+.popup-line.active,
+.popup-bar.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup-content-pca,
+.popup-content-cm,
+.popup-content-line,
+.popup-content-bar{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 2000px;
+    height: 1000px;
+}
+
+.popup-content-pca{
+    max-width: 2000px;
+    height: 650px;
+}
+
+.popup-content-cm{
+    max-width: 2000px;
+    height: 540px;
+}
+
+.popup-content-line {
+    max-width: 1000px;
+    height: 400px;
+}
+
+.popup-content-bar {
+    max-width: 1000px;
+    height: 550px;
+}
+
+.popup-content-pca img,
+.popup-content-cm img,
+.popup-content-line img,
+.popup-content-bar img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.popup-content-pca p,
+.popup-content-cm p,
+.popup-content-line p,
+.popup-content-bar p{
+    margin-top: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}

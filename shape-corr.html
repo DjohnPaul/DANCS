@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS — Shape-Feature Analysis!</title>
+    
+    <!-- Logo Title -->
+    <link rel="icon" href="images/cis_logo_t.png" type="image/x-icon/">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/shape-ftr.css">
+    <link rel="stylesheet" href="styles/figure-container.css">
+    <link rel="stylesheet" href="styles/crustacean-species.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <img class="logo-img" src="images/cis_logo_name.png">
+        </div>
+        <div>
+            <a href="landing-page.html">
+                <button class="right-btn">Home</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Homepage -->
+    <div class="homepage">
+        <img class="homepage-img" src="images/shape_feature_img.png">
+        <div class="bottom-right">
+            <strong class="bottom-right-str">Shape-Feature Analysis</strong><br>
+            <span class="bottom-right-spn">Analyze crab body stuctures and shape patterns with Hu Moments, <br>
+                a set of 4 (7 in total) numbers calculated using central moments <br>that are invariant to image transformations.</span>
+        </div>
+    </div>
+
+    <!-- Shape Feature Figures -->
+    <div class="figure-title">Species-Based Shape-Feature Comparison</div>
+
+    <hr class="hr-tlt">
+
+    <!-- Dungeness Crab -->
+    <div class="figure-cntr">
+        <div class="name">Dungeness Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/shape_corr/dungeness_crab/plot_dungeness_crab_vs_fiddler_crab.png" alt="Crab 1" 
+                onclick="openPopup('bar', 'figures/shape_corr/dungeness_crab/plot_dungeness_crab_vs_fiddler_crab.png', 'All the values of the features are closely similar together, with circularity showing the largest variation. The Dungeness crab has a circularity value above 0.2, while the Fiddler crab has a value close to 0.2.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/dungeness_crab/plot_dungeness_crab_vs_hermit_crab.png" alt="Crab 2" 
+                onclick="openPopup('bar', 'figures/shape_corr/dungeness_crab/plot_dungeness_crab_vs_hermit_crab.png', 'All the values of Hu are closely similar together, with area showing the largest variation. The Dungeness crab has an area value of 0.6, while the Hermit crab has a value of 0.5.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/dungeness_crab/plot_dungeness_crab_vs_king_crab.png" alt="Crab 3" 
+                onclick="openPopup('bar', 'figures/shape_corr/dungeness_crab/plot_dungeness_crab_vs_king_crab.png', 'All the values of the features closely similar together, with area showing the largest variation. The Dungeness crab has an area value of 0.6, while the King crab has a value above 0.6.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/dungeness_crab/plot_dungeness_crab_vs_rock_crab.png" alt="Crab 4" 
+                onclick="openPopup('bar', 'figures/shape_corr/dungeness_crab/plot_dungeness_crab_vs_rock_crab.png', 'All the values of the features closely similar together, with area showing the largest variation. The Dungeness crab has an area value of 0.6, while the Rock crab has a value above 0.6.')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Fiddler Crab -->
+    <div class="figure-cntr">
+        <div class="name">Fiddler Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/shape_corr/fiddler_crab/plot_fiddler_crab_vs_dungeness_crab.png" alt="Crab 1" 
+                onclick="openPopup('bar', 'figures/shape_corr/fiddler_crab/plot_fiddler_crab_vs_dungeness_crab.png', 'All the values of the features are closely similar together, with circularity showing the largest variation. The Dungeness crab has a circularity value above 0.2, while the Fiddler crab has a value close to 0.2.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/fiddler_crab/plot_fiddler_crab_vs_hermit_crab.png" alt="Crab 2" 
+                onclick="openPopup('bar', 'figures/shape_corr/fiddler_crab/plot_fiddler_crab_vs_hermit_crab.png', 'All the values of the features are similar together except in area and perimeter, with area showing the largest variation. The Fiddler crab has an area value close to 0.6, while the Hermit crab has a value of 0.5.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/fiddler_crab/plot_fiddler_crab_vs_king_crab.png" alt="Crab 3" 
+                onclick="openPopup('bar', 'figures/shape_corr/fiddler_crab/plot_fiddler_crab_vs_king_crab.png', 'All the values of the features are similar together, with area showing the largest variation. The Fiddler crab has an area value close to 0.6, while the King crab has a value above 0.6.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/fiddler_crab/plot_fiddler_crab_vs_rock_crab.png" alt="Crab 4" 
+                onclick="openPopup('bar', 'figures/shape_corr/fiddler_crab/plot_fiddler_crab_vs_rock_crab.png', 'All the values of the features are similar together, with area showing the largest variation. The Fiddler crab has an area value close to 0.6, while the Rock crab has a value above 0.6.')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Hermit Crab -->
+    <div class="figure-cntr">
+        <div class="name">Hermit Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/shape_corr/hermit_crab/plot_hermit_crab_vs_dungeness_crab.png" alt="Crab 1" 
+                onclick="openPopup('bar', 'figures/shape_corr/hermit_crab/plot_hermit_crab_vs_dungeness_crab.png', 'All the values of Hu are closely similar together, with area showing the largest variation. The Dungeness crab has an area value of 0.6, while the Hermit crab has a value of 0.5.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/hermit_crab/plot_hermit_crab_vs_fiddler_crab.png" alt="Crab 2" 
+                onclick="openPopup('bar', 'figures/shape_corr/hermit_crab/plot_hermit_crab_vs_fiddler_crab.png', 'All the values of the features are similar together except in area and perimeter, with area showing the largest variation. The Fiddler crab has an area value close to 0.6, while the Hermit crab has a value of 0.5.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/hermit_crab/plot_hermit_crab_vs_king_crab.png" alt="Crab 3" 
+                onclick="openPopup('bar', 'figures/shape_corr/hermit_crab/plot_hermit_crab_vs_king_crab.png', 'All the values of the features are similar together except in area and perimeter, with area showing the largest variation. The Hermit crab has an area value of 0.5, while the King crab has a value of above 0.6.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/hermit_crab/plot_hermit_crab_vs_rock_crab.png" alt="Crab 4" 
+                onclick="openPopup('bar', 'figures/shape_corr/hermit_crab/plot_hermit_crab_vs_rock_crab.png', 'All the values of the features are similar together except in area and perimeter, with area showing the largest variation. The Hermit crab has an area value of 0.5, while the Rock crab has a value of above 0.6.')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- King Crab -->
+    <div class="figure-cntr">
+        <div class="name">King Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/shape_corr/king_crab/plot_king_crab_vs_dungeness_crab.png" alt="Crab 1" 
+                onclick="openPopup('bar', 'figures/shape_corr/king_crab/plot_king_crab_vs_dungeness_crab.png', 'All the values of the features closely similar together, with area showing the largest variation. The Dungeness crab has an area value of 0.6, while the King crab has a value above 0.6.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/king_crab/plot_king_crab_vs_fiddler_crab.png" alt="Crab 2" 
+                onclick="openPopup('bar', 'figures/shape_corr/king_crab/plot_king_crab_vs_fiddler_crab.png', 'All the values of the features are similar together, with area showing the largest variation. The Fiddler crab has an area value close to 0.6, while the King crab has a value above 0.6.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/king_crab/plot_king_crab_vs_hermit_crab.png" alt="Crab 3" 
+                onclick="openPopup('bar', 'figures/shape_corr/king_crab/plot_king_crab_vs_hermit_crab.png', 'All the values of the features are similar together except in area and perimeter, with area showing the largest variation. The Hermit crab has an area value of 0.5, while the King crab has a value of above 0.6.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/king_crab/plot_king_crab_vs_rock_crab.png" alt="Crab 4" 
+                onclick="openPopup('bar', 'figures/shape_corr/king_crab/plot_king_crab_vs_rock_crab.png', 'All the values of the features are similar together, with Hu_0 showing the largest variation. The King crab is closer to 0.1 than the Rock crab.')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Rock Crab -->
+    <div class="figure-cntr">
+        <div class="name">Rock Crab</div>
+        <div class="figure-grid">
+            <div class="figure-item">
+                <img src="figures/shape_corr/rock_crab/plot_rock_crab_vs_dungeness_crab.png" alt="Crab 1" 
+                onclick="openPopup('bar', 'figures/shape_corr/rock_crab/plot_rock_crab_vs_dungeness_crab.png', 'All the values of the features closely similar together, with area showing the largest variation. The Dungeness crab has an area value of 0.6, while the Rock crab has a value above 0.6.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/rock_crab/plot_rock_crab_vs_fiddler_crab.png" alt="Crab 2" 
+                onclick="openPopup('bar', 'figures/shape_corr/rock_crab/plot_rock_crab_vs_fiddler_crab.png', 'All the values of the features are similar together, with area showing the largest variation. The Fiddler crab has an area value close to 0.6, while the Rock crab has a value above 0.6.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/rock_crab/plot_rock_crab_vs_hermit_crab.png" alt="Crab 3" 
+                onclick="openPopup('bar', 'figures/shape_corr/rock_crab/plot_rock_crab_vs_hermit_crab.png', 'All the values of the features are similar together except in area and perimeter, with area showing the largest variation. The Hermit crab has an area value of 0.5, while the Rock crab has a value of above 0.6.')">
+            </div>
+            <div class="figure-item">
+                <img src="figures/shape_corr/rock_crab/plot_rock_crab_vs_king_crab.png" alt="Crab 4" 
+                onclick="openPopup('bar', 'figures/shape_corr/rock_crab/plot_rock_crab_vs_king_crab.png', 'All the values of the features are similar together, with Hu_0 showing the largest variation. The King crab is closer to 0.1 than the Rock crab.')">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Shape Feature Heatmap -->
+    <div class="figure-title">Shape-Feature Heatmap</div>
+
+    <div class="shp-ftr-cntr">
+        <div class="shp-ftr-item">
+            <img class="shp-ftr-img" src="figures/shape_corr/plot_shape_feature_heatmap.png" alt="Shape-Feature Correlation" 
+            onclick="openPopup('shp-ftr', 'figures/shape_corr/plot_shape_feature_heatmap.png', 'In the Heatmap, a value of 1 indicates a perfect positive correlation, while -1 indicates a perfect negative correlation. If the shape features have high correlation, it means that different shape characteristics for example area and perimeter tend to change in a consistent pattern. This Shape-Feature Heatmap shows that the Hu features have a high correlation to one another while area, perimeter and circularity have low correlation.')">
+            <div class="shp-ftr-title">Shape-Feature Correlation</div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-bar" id="popup-bar">
+        <div class="popup-content-bar">
+            <span class="close-btn" onclick="closePopup('bar')">&times;</span>
+            <img id="popup-img-bar" src="" alt="Popup Image">
+            <p id="popup-desc-bar"></p>
+        </div>
+    </div>
+
+    <div class="popup-shp-ftr" id="popup-shp-ftr">
+        <div class="popup-content-shp-ftr">
+            <span class="close-btn" onclick="closePopup('shp-ftr')">&times;</span>
+            <img id="popup-img-shp-ftr" src="" alt="Popup Image">
+            <p id="popup-desc-shp-ftr"></p>
+        </div>
+    </div>
+
+    <!-- Crustacean Species -->
+    <div id="crustacean-container"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <img class="footer-logo-img" src="images/cis_logo_name_footer.png">
+        </div>
+    </div>
+
+    <!-- JS Links -->
+    <script src="scripts/pop-out-image.js"></script>
+    <script src="scripts/crustacean-species.js"></script>
+</body>
+</html>

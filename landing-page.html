@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS — Crustaceans Species Analysis!</title>
+
+    <!-- Fonts-->
+
+    <!-- Logo Title -->
+    <link rel="icon" href="images/cis_logo_t.png" type="image/x-icon/">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="styles/figure-container.css">
+    <link rel="stylesheet" href="styles/crustacean-species.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <img class="logo-img" src="images/cis_logo_name.png">
+        </div>
+        <div>
+            <a href="about-us.html">
+                <button class="right-btn">About Us</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Homepage -->
+    <div class="homepage">
+        <img class="homepage-img" src="images/background_img.jpg">
+        <div class="bottom-right">
+            <strong class="bottom-right-str">Crustaceans</strong><br>
+            <span class="bottom-right-spn">any member of the subphylum Crustacea (phylum Arthropoda), a group of<br>
+                invertebrate animals consisting of some 45,000 species distributed worldwide.
+            </span>
+        </div>
+    </div>
+
+    <!-- Correlation Grid -->
+    <div class="correlation-cntr">
+        <div>
+            <div class="feature-corr-txt">Feature Correlation</div>
+        </div>
+        <div class="correlation-grid">
+            <div class="correlation-item">
+                <img class="corr-item-img" src="images/color_histogram_img.png">
+                <div class="corr-feature">Color Histograms</div>
+                <div class="corr-feature-dscr">Color-Histograms Analysis <br>
+                    for RGB Channels</div>
+                <a href="color-corr.html" target="_blank">
+                    <button class='corr-btn'>View</button>
+                </a>
+            </div>
+            <div class="correlation-item">
+                <img class="corr-item-img" src="images/shape_feature_img.png">
+                <div class="corr-feature">Shape Feature</div>
+                <div class="corr-feature-dscr">Shape-Feature Analysis <br>
+                    using Hu Moments</div>
+                <a href="shape-corr.html" target="_blank">
+                    <button class='corr-btn'>View</button>
+                </a>
+            </div>
+            <div class="correlation-item">
+                <img class="corr-item-img" src="images/texture_feature_img.png">
+                <div class="corr-feature">Texture Feature</div>
+                <div class="corr-feature-dscr">Texture-Feature Analysis <br>
+                    using Local-Binary-Pattern</div>
+                <a href="texture-corr.html" target="_blank">
+                    <button class='corr-btn'>View</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clustering Container -->
+    <div class="cluster-cntr">
+        <div class="cluster-grid">
+            <div class="cluster-item">
+                <img class="k-means-img" src="figures/k-means/k-means_clustering_PCA.png" alt="K-Means PCA" 
+                onclick="openPopup('pca', 'figures/k-means/k-means_clustering_PCA.png', 'Placeholder')">
+            </div>
+            <div class="cluster-item">
+                <div class="clstr-title">Let's Extract Features!</div>
+                <div class="clstr-subtitle">Extract feature using K-Means Clustering</div>
+                <div class="clstr-desc">K-means clustering is a popular unsupervised machine <br>
+                    learning algorithm used for partitioning a dataset into a <br>
+                    pre-defined number of clusters. It is a technique used to <br>
+                    organize data into groups based on their similarity. After <br>
+                    clustering, plot and visualize the findings using PCA 2D, a <br>
+                    linear dimensionality reduction technique in data analysis.</div>
+                <div class="clstr-click">Click the figure for interpretation</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Model Container -->
+    <div class="model-cntr">
+        <div class="model-grid">
+            <div class="model-item">
+                <div class="mdl-title">Build, Train, and Evaluate a Model!</div>
+                <div class="mdl-subtitle">Create a model using Tensorflow</div>
+                <div class="mdl-desc">A Convolutional Neural Network (CNN) is a type of <br>
+                    supervised deep learning technique commonly used in <br>
+                    computer vision. TensorFlow is an open-source platform <br>
+                    for machine learning using data flow graphs.</div>
+                <div class="mdl-click">Click the figure for interpretation</div>
+                <div class="btn-cntr">
+                    <a href="model-analysis.html" target="_blank">
+                        <button class="view-btn">View</button>
+                    </a>
+                </div>
+            </div>
+            <div class="model-item">
+                <img class="cm-img" src="figures/model/model_cm.png" alt="Confusion Matrix" 
+                onclick="openPopup('cm', 'figures/model/model_cm.png', 'Placeholder')">
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-pca" id="popup-pca">
+        <div class="popup-content-pca">
+            <span class="close-btn" onclick="closePopup('pca')">&times;</span>
+            <img id="popup-img-pca" src="" alt="Popup Image">
+            <p id="popup-desc-pca"></p>
+        </div>
+    </div>
+
+    <div class="popup-cm" id="popup-cm">
+        <div class="popup-content-cm">
+            <span class="close-btn" onclick="closePopup('cm')">&times;</span>
+            <img id="popup-img-cm" src="" alt="Popup Image">
+            <p id="popup-desc-cm"></p>
+        </div>
+    </div>
+
+    <!-- Crustacean Species -->
+    <div id="crustacean-container"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <img class="footer-logo-img" src="images/cis_logo_name_footer.png">
+        </div>
+    </div>
+
+    <!-- JS Links -->
+    <script src="scripts/pop-out-image.js"></script>
+    <script src="scripts/crustacean-species.js"></script>
+</body>
+</html>
