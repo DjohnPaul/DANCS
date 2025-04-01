@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="styles/model.css">
     <link rel="stylesheet" href="styles/figure-container.css">
     <link rel="stylesheet" href="styles/crustacean-species.css">
     <link rel="stylesheet" href="styles/footer.css">
@@ -85,7 +86,7 @@
         <div class="cluster-grid">
             <div class="cluster-item">
                 <img class="k-means-img" src="figures/k-means/k-means_clustering_PCA.png" alt="K-Means PCA" 
-                onclick="openPopup('pca', 'figures/k-means/k-means_clustering_PCA.png', 'Placeholder')">
+                onclick="openPopup('mdl-eval', 'figures/k-means/k-means_clustering_PCA.png', 'The scatter plot above represents the clustering of five crustacean species using K-Means, and visualized using PCA 2D. Distinct clustered are indicated with different colors, suggesting that the species varies distributions in the reduced feature space. The overlapping clusters on color purple and green suggest similarities among some species, while more distinct clusters on other color imply more separable traits.')">
             </div>
             <div class="cluster-item">
                 <div class="clstr-title">Let's Extract Features!</div>
@@ -120,7 +121,7 @@
             </div>
             <div class="model-item">
                 <img class="cm-img" src="figures/model/model_cm.png" alt="Confusion Matrix" 
-                onclick="openPopup('cm', 'figures/model/model_cm.png', 'Placeholder')">
+                onclick="openPopup('mdl-eval', 'figures/model/model_cm.png', 'This matrix shows that fiddler_crab, with 195 correct predictions, has the highest accuracy among all species, although 99 instances were misclassified as hermit_crab, suggesting some similarity between their features. King_crab also performs well, with 184 correct predictions.')">
             </div>
         </div>
     </div>
@@ -142,8 +143,65 @@
         </div>
     </div>
 
+    <div class="popup-mdl-eval" id="popup-mdl-eval">
+        <div class="popup-content-mdl-eval">
+            <span class="close-btn" onclick="closePopup('mdl-eval')">&times;</span>
+            <img id="popup-img-mdl-eval" src="" alt="Popup Image">
+            <p id="popup-desc-mdl-eval"></p>
+        </div>
+    </div>
+
     <!-- Crustacean Species -->
-    <div id="crustacean-container"></div>
+    <div class="crtcn-space"></div>
+    <div class="crtcn-cntr">
+        <div class="crtcn-grid">
+            <div class="crtcn-item">          
+                <img class="crtcn-img" src="images/species/dungeness_crab.png">
+                <div class="overlay-img">
+                    <div class="overlay-content">
+                        <div class="crtcn-name">Dungeness Crab</div>
+                        <div class="crtcn-desc">An oval-shaped carapace that is yellow-brown to purplish. They have four pairs of walking legs and a pair of claws.</div>
+                    </div>
+                </div>
+            </div>  
+            <div class="crtcn-item">
+                <img class="crtcn-img" src="images/species/fiddler_crab.jpg">
+                <div class="overlay-img">
+                    <div class="overlay-content">
+                        <div class="crtcn-name">Fiddler Crab</div>
+                        <div class="crtcn-desc">Are small, semi-terrestrial crabs are characterized by extreme cheliped asymmetry in males.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="crtcn-item">
+                <img class="crtcn-img" src="images/species/hermit_crab.jpg">
+                <div class="overlay-img">
+                    <div class="overlay-content">
+                        <div class="crtcn-name">Hermit Crab</div>
+                        <div class="crtcn-desc">A soft exoskeleton and a twisted abdomen to fit into snail shells.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="crtcn-item">
+                <img class="crtcn-img" src="images/species/king_crab.jpg">
+                <div class="overlay-img">
+                    <div class="overlay-content">
+                        <div class="crtcn-name">King Crab</div>
+                        <div class="crtcn-desc">They range in color from brownish to bluish red and are covered in sharp spines. They have three pairs of walking legs and one pair of claws.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="crtcn-item">
+                <img class="crtcn-img" src="images/species/rock_crab.jpg">
+                <div class="overlay-img">
+                    <div class="overlay-content">
+                        <div class="crtcn-name">Rock Crab</div>
+                        <div class="crtcn-desc">A wide carapace that is quite smooth to the touch and two large claws of equal size with black tips.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <div class="footer">
@@ -154,6 +212,5 @@
 
     <!-- JS Links -->
     <script src="scripts/pop-out-image.js"></script>
-    <script src="scripts/crustacean-species.js"></script>
 </body>
 </html>

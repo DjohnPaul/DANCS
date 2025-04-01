@@ -50,7 +50,7 @@
             <div class="name name-left">Data Preparation:</div>
             <div>
                 <img class="model-trng-img" src="figures/model/steps/1_data_preparation.png" alt="Process 1" 
-                onclick="openPopup('mdl-1', 'figures/model/steps/1_data_preparation.png', 'Description for Process 1')">
+                onclick="openPopup('mdl-1', 'figures/model/steps/1_data_preparation.png', 'For data preparation, the model required crustaceans images related to the target species, which are loaded under crab-images-dataset. The datasets are then splits into train, valid, and test batches for preprocessing. It found 3833 images on training set, 1157 on validation set, and 1369 on testing set.')">
             </div>
         </div>
 
@@ -60,7 +60,7 @@
             <div class="name name-left">Build the Model:</div>
             <div>
                 <img class="model-trng-img" src="figures/model/steps/2_build_model.png" alt="Process 2" 
-                onclick="openPopup('mdl-2', 'figures/model/steps/2_build_model.png', 'Description for Process 2')">
+                onclick="openPopup('mdl-2', 'figures/model/steps/2_build_model.png', 'The CNN architecture is defined using Sequential(), a convoluted model which include stacking convolutional 2D, pooling, and fully connected layers. Moreover, it is built with normalization and dropouts for an efficient model training.')">
             </div>
         </div>
 
@@ -70,7 +70,7 @@
             <div class="name name-left">Compile the Model:</div>
             <div>
                 <img class="model-trng-img" src="figures/model/steps/3_compile_model.png" alt="Process 3" 
-                onclick="openPopup('mdl-3', 'figures/model/steps/3_compile_model.png', 'Description for Process 3')">
+                onclick="openPopup('mdl-3', 'figures/model/steps/3_compile_model.png', '	After defining a CNN architecture, the model is compiled by configuring optimizer using Adam function with a learning rate of 0.0001, a categorcal crossentropy loss function, and accuracy evaluation metrics.')">
             </div>
         </div>
 
@@ -80,7 +80,7 @@
             <div class="name name-left">Train the Model:</div>
             <div>
                 <img class="model-trng-img" src="figures/model/steps/4_train_model.png" alt="Process 4" 
-                onclick="openPopup('mdl-4', 'figures/model/steps/4_train_model.png', 'Description for Process 4')">
+                onclick="openPopup('mdl-4', 'figures/model/steps/4_train_model.png', 'To train the model, it uses fit() function on the model that adjust weights using backpropagation and evaluates performance based on validation data. The epochs had an early stop on iteration 9 concluding that the best weight for the model can only have an accuracy of 0.6580 with loss 0.8442 - validation accuracy of 0.5013 with validation loss 1.4180.')">
             </div>
         </div>
 
@@ -90,7 +90,7 @@
             <div class="name name-left">Model Prediction:</div>
             <div>
                 <img class="model-trng-img" src="figures/model/steps/5_evaluate_model.png" alt="Process 5" 
-                onclick="openPopup('mdl-5', 'figures/model/steps/5_evaluate_model.png', 'Description for Process 5')">
+                onclick="openPopup('mdl-5', 'figures/model/steps/5_evaluate_model.png', 'The model is used to predict to check if the trained model performed well on unseen data. It has a test accuracy 0.43 and test loss of 1.42.')">
             </div>
         </div>
 
@@ -104,7 +104,7 @@
     <div class="model-eval-cntr">
         <div class="model-eval-item">
             <img class="model-eval-img" src="figures/model/model_cm.png" alt="LBP-Histogram Between Crab Species" 
-            onclick="openPopup('mdl-eval', 'figures/model/model_cm.png', 'This matrix shows that fiddler_crab, with 195 correct predictions, has the highest accuracy among all species, although 99 instances were misclassified as hermit_crab, suggesting some similarity between their features. King_crab also performs well, with 184 correct predictions')">
+            onclick="openPopup('mdl-eval', 'figures/model/model_cm.png', 'This matrix shows that fiddler_crab, with 195 correct predictions, has the highest accuracy among all species, although 99 instances were misclassified as hermit_crab, suggesting some similarity between their features. King_crab also performs well, with 184 correct predictions.')">
             <div class="model-eval-title">Confusion Matrix</div>
         </div>
     </div>
@@ -185,7 +185,56 @@
     </div>
 
     <!-- Crustacean Species -->
-    <div id="crustacean-container"></div>
+    <div class="crtcn-space"></div>
+    <div class="crtcn-cntr">
+        <div class="crtcn-grid">
+            <div class="crtcn-item">          
+                <img class="crtcn-img" src="images/species/dungeness_crab.png">
+                <div class="overlay-img">
+                    <div class="overlay-content">
+                        <div class="crtcn-name">Dungeness Crab</div>
+                        <div class="crtcn-desc">An oval-shaped carapace that is yellow-brown to purplish. They have four pairs of walking legs and a pair of claws.</div>
+                    </div>
+                </div>
+            </div>  
+            <div class="crtcn-item">
+                <img class="crtcn-img" src="images/species/fiddler_crab.jpg">
+                <div class="overlay-img">
+                    <div class="overlay-content">
+                        <div class="crtcn-name">Fiddler Crab</div>
+                        <div class="crtcn-desc">Are small, semi-terrestrial crabs are characterized by extreme cheliped asymmetry in males.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="crtcn-item">
+                <img class="crtcn-img" src="images/species/hermit_crab.jpg">
+                <div class="overlay-img">
+                    <div class="overlay-content">
+                        <div class="crtcn-name">Hermit Crab</div>
+                        <div class="crtcn-desc">A soft exoskeleton and a twisted abdomen to fit into snail shells.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="crtcn-item">
+                <img class="crtcn-img" src="images/species/king_crab.jpg">
+                <div class="overlay-img">
+                    <div class="overlay-content">
+                        <div class="crtcn-name">King Crab</div>
+                        <div class="crtcn-desc">They range in color from brownish to bluish red and are covered in sharp spines. They have three pairs of walking legs and one pair of claws.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="crtcn-item">
+                <img class="crtcn-img" src="images/species/rock_crab.jpg">
+                <div class="overlay-img">
+                    <div class="overlay-content">
+                        <div class="crtcn-name">Rock Crab</div>
+                        <div class="crtcn-desc">A wide carapace that is quite smooth to the touch and two large claws of equal size with black tips.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <div class="footer">
@@ -196,6 +245,5 @@
 
     <!-- JS Links -->
     <script src="scripts/pop-out-image.js"></script>
-    <script src="scripts/crustacean-species.js"></script>
 </body>
 </html>
